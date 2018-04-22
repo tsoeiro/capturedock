@@ -8,7 +8,7 @@ LABEL maintainer="T"
 
 RUN \
 echo "**** install app ****" && \
-git clone --depth=1 https://github.com/purplederple/CaptureBate /app/cb
+git clone --depth=1 https://github.com/purplederple/CaptureBate /app/cb && \
 
 echo "**** install packages ****" && \
  apk add --no-cache \
