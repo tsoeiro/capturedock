@@ -11,9 +11,7 @@ echo "**** install app ****" && \
 git clone --depth=1 https://github.com/purplederple/CaptureBate /app/cb && \
 
 echo "**** install packages ****" && \
- apk add --no-cache \
-	py-pip \
-  && cd /app/cb && pip install --no-cache-dir -r requirements.txt \
+cd /app/cb && pip install --no-cache-dir -r requirements.txt \
 
 # copy local files
 COPY root/ /
