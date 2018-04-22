@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.python:3.7
+FROM python:3.4-alpine
 
 # set version label
 ARG BUILD_DATE
@@ -17,6 +17,7 @@ echo "**** install packages ****" && \
 
 # copy local files
 COPY root/ /
+COPY config/ /
 
 # ports and volumes
 VOLUME /config /data
