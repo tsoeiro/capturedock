@@ -1,0 +1,7 @@
+argparse
+beautifulsoup4
+requests
+urllib3
+# wsgiref
+streamlink
+futures
